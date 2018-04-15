@@ -1,9 +1,15 @@
 # easy_timing
 
+## installation
+
+`python -m pip install easy_timing`
+
+
 ## using the context manager
 
 ```
 from easy_timing import timer
+
 with timer():
     print('hi')
 ```
@@ -36,9 +42,11 @@ A decorator `show_execution_time` may be used on a method or function as well:
 
 ```
 from easy_timing import show_execution_time
+
 @show_execution_time
 def test_func():
     print('hi')
+
 test_func()
 ```
 
