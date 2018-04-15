@@ -1,9 +1,11 @@
 # easy_timing
 
 ## using the context manager
-```from easy_timing import timer
+
+```
+from easy_timing import timer
 with timer():
-    print('hi')'
+    print('hi')
 ```
 
 outputs:
@@ -15,19 +17,23 @@ elapsed: 0.0 seconds
 
 You may also give the section of code a name and optionally the number of digits to show:
 
-```from time import sleep
+```
+from time import sleep
 
 with timer('time.sleep test', ndigits=3):
     sleep(2.33)```
 which will output:
-```time.sleep test
+
+```
+time.sleep test
 elapsed: 2.33 seconds
 ```
 
 ## using the decorator
 A decorator `show_execution_time` may be used on a method or function as well:
 
-```from easy_timing import show_execution_time
+```
+from easy_timing import show_execution_time
 @show_execution_time
 def test_func():
     print('hi')
@@ -36,7 +42,8 @@ test_func()
 
 outputs:
 
-```test_func called
+```
+test_func called
 hi
 elapsed: 0.0 seconds
 ```
@@ -44,7 +51,8 @@ elapsed: 0.0 seconds
 ## disabling during production
 You can leave your `timer` and `show_execution_time` statements in the code if you like and set flags to disable or configure across all code:
 
-```import easy_timing
+```
+import easy_timing
 easy_timing.CONTEXT_MANAGER_SHOW_TIME = False
 DECORATOR_SHOW_TIME = False
 DECORATOR_DIGITS = 6
