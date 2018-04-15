@@ -21,7 +21,9 @@ You may also give the section of code a name and optionally the number of digits
 from time import sleep
 
 with timer('time.sleep test', ndigits=3):
-    sleep(2.33)```
+    sleep(2.33)
+```
+
 which will output:
 
 ```
