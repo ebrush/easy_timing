@@ -2,7 +2,7 @@
 
 ## installation
 
-`python -m pip install easy_timing`
+`python -m pip install easy-timing`
 
 
 ## using the context manager

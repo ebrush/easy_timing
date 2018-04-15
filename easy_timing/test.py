@@ -1,7 +1,7 @@
 from functools import partial
 from time import sleep
 
-from timers import timer, show_execution_time
+from easy_timing.timers import timer, show_execution_time
 
 
 def test_timer_context_manager():
@@ -45,8 +45,9 @@ if __name__ == '__main__':
     test_timer_context_manager()
     test_timer_decorator()
 
-    # the below will show how you can turn off the displays
-    import timers
+    print('now we will disable execution time outputs...')
+    from easy_timing import timers
+
     timers.CONTEXT_MANAGER_SHOW_TIME = False
     timers.DECORATOR_SHOW_TIME = False
     test_timer_context_manager()
