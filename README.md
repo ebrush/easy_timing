@@ -16,7 +16,8 @@ with timer():
 
 outputs:
 
-```Code executed
+```
+Code executed
 hi
 elapsed: 0.0 seconds
 ```
