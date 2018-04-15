@@ -4,9 +4,6 @@
 
 `python -m pip install easy_timing`
 
-Wheel is also included if you prefer to use it.
-
-
 ## using the context manager
 
 ```
