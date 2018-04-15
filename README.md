@@ -2,7 +2,7 @@
 
 ## installation
 
-`python -m pip install easy-timing`
+`python -m pip install easy_timing`
 
 Wheel is also included if you prefer to use it.
 
