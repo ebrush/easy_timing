@@ -64,8 +64,8 @@ You can leave your `timer` and `show_execution_time` statements in the code if y
 ```
 import easy_timing
 easy_timing.CONTEXT_MANAGER_SHOW_TIME = False
-DECORATOR_SHOW_TIME = False
-DECORATOR_DIGITS = 6
+easy_timing.DECORATOR_SHOW_TIME = False
+easy_timing.DECORATOR_DIGITS = 6
 ```
 
 With these settings, no timing statements would be shown and code will execute normally. If the decorator were enabled, the statements would show up to 6 digits of precision.
